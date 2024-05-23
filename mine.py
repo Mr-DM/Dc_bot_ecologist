@@ -40,6 +40,10 @@ async def mem_ecology(ctx):
    # Можем передавать файл как параметр!
     await ctx.send(file=picture)    
     
+@bot.command()
+async def helps(ctx):
+     await ctx.send(f'В боте {bot.user} есть функцы как  (helps,ozone_hole,mem_ecology,advice) не забудь в начале !')
+    
     
 
 bot.run("TOKEN")
